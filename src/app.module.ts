@@ -36,8 +36,11 @@ import { CategoriesModule } from './categories/categories.module';
 
 import { OrdersModule } from './orders/orders.module';
 
+import { ProductsModule } from './products/products.module';
+
 @Module({
   imports: [
+    ProductsModule,
     OrdersModule,
     CategoriesModule,
     ConfigModule.forRoot({
